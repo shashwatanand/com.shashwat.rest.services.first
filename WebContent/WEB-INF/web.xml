@@ -11,11 +11,19 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
-	<!-- servlet> <servlet-name>Shashwat REST Service</servlet-name> <servlet-name>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-name> 
-		<init-param> <param-name>com.sun.jersey.config.property.packages</param-name> 
-		<param-value>com.shashwat.rest.services.first</param-value> </init-param> 
-		<load-on-startup>1</load-on-startup> </servlet> <servlet-mapping> <servlet-name>Shashwat 
-		REST Service</servlet-name> <url-pattern>/api/*</url-pattern> </servlet-mapping> -->
+	<!--<servlet>
+		<servlet-name>Shashwat REST Service - status</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.shashwat.rest.services.first</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Shashwat REST Service - status</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>-->
 
 	<servlet>
 		<servlet-name>Shashwat REST Service</servlet-name>
