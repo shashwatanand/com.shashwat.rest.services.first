@@ -21,11 +21,10 @@ public class CelToFah {
 				+ "</tempCtoFService>";
 	}
 	
-	@Path("{celP}")
+	@Path("{cel}")
 	@GET
 	@Produces("application/xml")
-	public String convertCtoF(@PathParam("celP") Double celP) {
-		Double cel = celP;
+	public String convertCtoF(@PathParam("cel") Double cel) {
 		Double fah = ((cel * 9) / 5) + 32;
 
 		String returnStr = "Cel to Fah Output: \n\n" + fah;
